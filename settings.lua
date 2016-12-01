@@ -7,7 +7,7 @@ function Settings:Init()
 	self.brent_code = 'BRF7'
 	self.brent_class = 'SPBFUT'
 	
-	self.usd_fut_code = 'SiM7'
+	self.usd_fut_code = 'SiZ6'
 	self.usd_fut_class = 'SPBFUT'
 
 	self.usd_cets_code = 'USD000UTSTOM'
