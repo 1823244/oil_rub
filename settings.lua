@@ -13,12 +13,16 @@ function Settings:Init()
 	self.usd_cets_code = 'USD000UTSTOM'
 	self.usd_cets_class = 'CETS'
 	
+	----------------------------------------------------
 	--MAIN OPTION!!!!! switch between FORTS and SELT
-	self.use_usd_fut = true --if false then we use CETS
+	self.use_usd_fut = false --if false then we use CETS
+	----------------------------------------------------
+	----------------------------------------------------
+	
 	
 	if self.use_usd_fut == false then
 		self.usd_code = self.usd_cets_code
-		self.usd_class = self.usd_fut_class
+		self.usd_class = self.usd_cets_class
 	else
 		self.usd_code = self.usd_fut_code
 		self.usd_class = self.usd_fut_class
